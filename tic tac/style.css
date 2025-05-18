@@ -1,0 +1,126 @@
+/* === General Styling === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom right, #84fab0, #8fd3f4);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #2c3e50;
+  font-size: 2.5rem;
+}
+
+/* === Setup Panel === */
+#setup {
+  background: #ffffffaa;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#setup input {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#setup button {
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#setup button:hover {
+  background: #2ecc71;
+}
+
+/* === Game Container === */
+#gameContainer {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* === Game Board === */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  background-color: #ecf0f1;
+  border: 3px solid #3498db;
+  border-radius: 15px;
+  color: #34495e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.cell:hover {
+  background-color: #d6eaf8;
+  transform: scale(1.05);
+}
+
+.cell.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* === Scoreboard & Status === */
+.scoreboard, #status, #timer {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+#timer span {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* === Action Buttons === */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #3498db;
+}
+
+/* === Hidden Class === */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe - AI Enhanced</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <div id="setup">
+    <input id="playerX" placeholder="Player X Name" />
+    <input id="playerO" placeholder="Player O Name or 'AI'" value="AI" />
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div id="gameContainer" class="hidden">
+    <div class="scoreboard">
+      <span id="scoreX">X (0)</span> vs <span id="scoreO">O (0)</span>
+    </div>
+    <div id="timer">Time left: <span id="time">10</span>s</div>
+    <div id="status">Game Status</div>
+    <div class="game">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+    <button onclick="resetBoard()">Next Round</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
